@@ -1,0 +1,20 @@
+[
+    {
+        "TITLE": "MATHTHEMATICS",
+        "MAX_NUM": 30,
+        "AVAILABLE_FLAG": true,
+        "id": 1
+    },
+    {
+        "TITLE": "ENGLISH",
+        "MAX_NUM": 50,
+        "AVAILABLE_FLAG": true,
+        "id": 2
+    },
+    {
+        "TITLE": "FRENCH",
+        "MAX_NUM": 50,
+        "AVAILABLE_FLAG": false,
+        "id": 3
+    }
+]

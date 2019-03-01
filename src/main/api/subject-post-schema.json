@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-01/schema#",
+  "title": "Subject",
+  "description": "A subject in school",
+  "type": "object",
+  "properties": {
+    "TITLE": {
+    	"description": "The tile of the subject",
+      	"type": "string"
+    },
+    "MAX_NUM": {
+    	"description": "The maximum people can be registered for the subject",
+      	"type": "integer"
+    },
+    "AVAILABLE_FLAG": {
+      	"description": "The flag of the subject is available",
+      	"type": "boolean"
+    },
+    "id": {
+    	"description": "The id for the subject",
+      	"type": "integer"
+    }
+  },
+  "required": [
+    "TITLE",
+    "MAX_NUM",
+    "AVAILABLE_FLAG"
+  ]
+}

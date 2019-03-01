@@ -5,8 +5,10 @@ version: 1.0
 protocols: [HTTPS]
 mediaType: [application/json]
 
-
-
+types:
+  Subject:
+    type: !include subject-post-schema.json
+    description: this is a schema describing person
 
 /v1.0/subjects:
   get:    
@@ -14,4 +16,16 @@ mediaType: [application/json]
       200:
         body:
           application/json:
-     
+            example: !include examples/subject.json
+  
+  post:
+    description: Creates a bank account for the customer
+    body:
+      type: Subject
+      example: !include examples/subject-post-request.json
+    responses:
+      201:
+        headers:
+          Location:
+            description: URI pointing to the newly created student account
+               
